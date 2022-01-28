@@ -1,0 +1,535 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* --------------------- Head ----------------- */
+
+.head {
+    display: grid;
+    height: 70px;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'logo . signup cart sbox sbtn .';
+    grid-template-columns: 20% 30% 5% 5% 25% 10% 5%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    grid-column-gap: 0px;
+}
+
+/* -------------------- Logo ----------------------- */
+#logo {
+    grid-area: logo;
+    font-size: 40px;
+    justify-self: center;
+    /* border: 1px solid black;     */
+}
+
+/*  ----------------- Frist Part Of Logo ------------------- */
+.logo1{
+    color:black;     
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+/* --------------- Second Part Of Logo ------------------- */
+.logo2{
+    color: rgb(44, 65, 82) !important;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+/* ------------------ Horizontal Line ------------------- */
+
+#logo1hr {
+    /* color:red !important; */
+    border-top: 3px solid red;
+    width: 30%;
+    border-bottom: 20px;
+
+}
+
+/*  ----------------- Search Box ------------------ */
+
+#sbox {
+    grid-area: sbox;
+    height: 60%;
+    width: 100%;
+    border: 2px solid black;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px !important;
+    font-size: 20px;
+    justify-self: right;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}    
+  
+.hitem .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .hitem.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .hitem.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+
+/* ------------------ Search Button ---------------- */
+
+
+#sbtn {
+    grid-area: sbtn;
+    height: 60%;
+    width: 70%;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  
+  /* ----------------------- Button Hover Effect ------------------------------ */
+#sbtn:hover {
+    /* text-shadow: 1px 1px; */
+    border: 1px solid black;
+    background-color:  rgb(44, 65, 82) !important;
+    color: white;
+}
+  
+
+/*  ----------------- Sign-up ----------------------- */
+
+#signup {
+    grid-area: signup;
+    width: 100%;
+    height: 40%;
+    color: black;
+    font-size: 30px;
+    /* border: 1px solid black; */
+    text-align: right;
+    justify-self: right;
+    /* margin-left: 90px; */
+    /* color: rgb(44, 65, 82) !important; */
+}
+
+/* --------------- Cart -------------- */
+
+#cart {
+    grid-area: cart;
+    width: 100%;
+    height: 40%;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    /* border: 1px solid black; */
+    justify-self: center;
+    text-align: center;
+    /* margin-left: 97px; */
+}
+
+/* ---------------- HoverEffect -------------- */
+#signup:hover{
+    color: rgb(44, 65, 82) !important;
+}
+#cart:hover{
+    color: rgb(44, 65, 82) !important;
+}
+
+/*  -------------------------- Navbar -------------------------- */
+
+.Navbar{
+    height: 50px;
+    display: grid;
+    border: 1px solid silver;
+    grid-template-areas: '. link1 link2 link3 link4 .';
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 10% 10% 10% 10% 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+/* -------- Navbar Items -------- */
+
+.nitem {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    /* font-family: 'Satisfy', cursive; */
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+/* -------------------------- Hover effect ----------------- */
+.nitem:hover{
+    /* text-decoration: underline; */
+    color: white;
+    border-bottom: 1px solid black;
+    border-width: 50%;
+    border-top:   1px solid black;
+}
+
+/* ------------ Link1 ------------ */
+
+#link1 {
+    grid-area: link1;
+}
+
+/* ---------- Link2 ----------  */
+
+#link2 {
+    grid-area: link2;
+}
+
+/* ---------- Link3 ----------- */
+
+#link3 {
+    grid-area: link3;
+}
+
+/* ----------- Link4 ------------- */
+
+#link4 {
+    grid-area: link4;
+}
+
+
+/* ------------------------------------------- Carasoule -------------------------------- */
+
+.carasouel{
+    margin-top: 5px;
+    border: 1px solid black;
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    color: wheat;
+    text-align: center;
+}
+
+
+/* ------------------------------------- Carasoule Images ----------------------------------- */
+.carasouel img{
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* -------------------------------------- Design Of Cards -------------------------------------- */
+
+.cardcontainer {
+    height: 750px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: 8% 45% 45%;
+    grid-template-areas:
+    'brands brands brands brands brands'
+    'card1 card2 card3 card4 card5'
+    'card6 card7 card8 card9 card10';
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(221 213 213);
+}
+
+/*  -------------------------------- Universal Styling Of Cards ------------------------------ */
+
+.card {
+    width: 100%;
+    font-size: 25px;
+    align-self: center;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+#brands{
+    grid-area: brands;    
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    border: none !important;
+}
+
+
+/*  ------------------------------------ Individual Cards -------------------------------- */
+
+
+/* ----------- Card1 --------- */
+#card1 {
+    grid-area: card1;
+}
+
+/* ---------- Card2 ----------- */
+
+#card2 {
+    grid-area: card2;
+}
+
+/* ---------- Card3 ------------ */
+
+#card3 {
+    grid-area: card3;
+}
+
+/* ----------- Card4 ---------- */
+
+#card4 {
+    grid-area: card4;
+}
+
+/* ----------- Card5 ------------ */
+
+#card5 {
+    grid-area: card5;
+}
+
+/* ---------- Card6 ------------- */
+
+#card6 {
+    grid-area: card6;
+}
+
+/* --------- Card7 --------------- */
+
+#card7{
+    grid-area: card7;
+}
+
+/* ----------- Card8 ----------- */
+
+#card8{
+    grid-area: card8;
+}
+
+/* ------------- Card9 ---------- */
+
+#card9{
+    grid-area: card9;
+}
+
+/* ----------- Card10 ------------- */
+
+#card10{
+    grid-area: card10;
+}
+
+
+/*  ------------------------------------------- Cards Images ---------------------------------- */
+
+
+.card img{
+    height: 95%;
+    width: 95%;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 7px;
+}
+
+
+/* -------------------------------------- Card Hover ------------------------ */
+
+.card:hover{
+    overflow: hidden;
+}
+
+/* ------------------------------------- Card Image Hover ----------------------------------------- */
+
+.card:hover img{
+    height: 99%;
+    width: 99%;
+    transform:scale(1.1);
+    align-self: center;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    transition: 0.6s;
+    margin-top: 0px;
+}
+
+
+
+
+/* ------------------------------------------- Foooter ----------------------------------------- */
+
+
+
+#footer {
+    display: grid;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    /* border: 2px solid black; */
+    grid-template-areas: ' logo . social'
+        'useful useful useful'
+        'flink1 flink2 flink3 '
+        'copy copy copy';
+    /* grid-column-gap: 5%; */
+    grid-row-gap: 5%;
+    grid-template-rows: 15% 10% 55% 5%;
+    grid-template-columns: 20% 40% 40%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#footer #logo {
+    grid-area: logo;
+    font-size: 40px;
+    justify-self: center;
+    /* border: 1px solid black;     */
+}
+
+/*  ----------------- Frist Part Of Logo ------------------- */
+#footer .logo1{
+    color: white;     
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+#footer .logo2{
+    color: white !important;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+
+.social {
+    height: 100%;
+    width: 100%;
+    grid-area: social;
+    border-left: 2px solid white;
+    /* border: 2px solid black; */
+}
+
+.social i {
+    height: 60%;
+    width: 10%;
+    margin: 15px 30px;
+    font-size: 30px;
+    /* border: 2px solid black; */
+}
+
+#facebook:hover{
+    width: 10%;
+    height: 70%;
+    font-size: 40px;
+    margin: 15px 30px;
+}
+#twiiter:hover {
+    width: 10%;
+    height: 70%;
+    font-size: 40px;
+    margin: 15px 30px;
+}
+#insta:hover {
+    width: 10%;
+    height: 70%;
+    font-size: 40px;
+    margin: 15px 30px;
+}
+
+/* #mail:hover {
+    width: 10%;
+    height: 70%;
+    font-size: 40px;
+    margin: 15px 30px;
+} */
+
+#facebook {
+    color: blue;
+}
+
+#twiiter {
+    color: blue;
+}
+
+#insta {
+    color: rgb(131, 58, 180);
+}
+
+.useful {
+    grid-area: useful;
+    height: 100%;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    /* text-decoration: underline white; */
+}
+
+
+.flink {
+    border-right: 2px solid white;
+    text-align: center;
+    list-style-type: none;
+    font-size: 25px;
+
+}
+
+.flink a {
+    display: block;
+    margin-top: 20px;
+}
+
+.flink a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#flink1 {
+    grid-area: flink1;
+}
+
+#flink2 {
+    grid-area: flink2;
+}
+
+#flink3 {
+    grid-area: flink3;
+    border: none;
+}
+
+.copy {
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    /* border: 2px solid black; */
+    grid-area: copy;
+}

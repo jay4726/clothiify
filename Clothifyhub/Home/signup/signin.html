@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="signin.css">
+    <title> Sign Up </title>
+</head>
+<body>
+    <div id="signform">
+        <h1>Sign Up</h1>
+
+        <form action="#" method="post" id="sform">
+            
+            <!-- ------------------------ Name ---------------------- -->
+            
+            <div id="name" class="signup">
+                <i class="fa fa-user-alt"></i>
+                <input type="text" name="name" placeholder="Enter Your Full Name" required>
+            </div>
+ 
+            <!-- ------------------- Email --------------------- -->
+            
+            <div id="email" class="signup">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Enter Your Email-Id" required>
+            </div>
+            
+            <!-- ------------------ Number -------------------- -->
+
+            <div id="number" class="signup">
+                <i class="fa fa-phone-alt"></i>
+                <input type="number" name="cnumber" placeholder="Enter Your Number" required>
+            </div>
+
+            <!-- ------------------ Username ------------------ -->
+
+            <div id="uname" class="signup">
+                <i class="fa fa-smile"></i>
+                <input type="text" name="uname" placeholder="Enter Your Username" required>
+            </div>
+
+            <!-- -------------- Password ----------------------- -->
+
+            <div id="pass" class="signup">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+
+            <!-- --------------- Confirm Password ------------------ -->
+
+            <div id="cpass" class="signup">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="cpassword" placeholder="Confirm Password" required>
+            </div>
+
+            <!-- --------------- Gender ----------------------- -->
+
+            <div id="male" >
+                <i class="fa fa-male"></i>
+                <label for="male"> Male: </label>
+                <input type="radio" name="gender" value="male" required>
+            </div>
+
+            <div id="female" >
+                <i class="fa fa-female"></i>
+                <label for="Female"> Female: </label>
+                <input type="radio" name="gender" value="Female" required>
+            </div>
+
+            <div id="other" >
+                <i class="fa fa-mars"></i>
+                <label for="Other"> Other:</label>
+                <input type="radio" name="gender" value="Other" required>
+            </div>
+            
+            <!-- ------------------ Submit ------------------- -->
+
+            <input type="submit" value="Click Here" id="lbutton" class="signup">
+        </form>
+    </div>
+</body>
+</html>
